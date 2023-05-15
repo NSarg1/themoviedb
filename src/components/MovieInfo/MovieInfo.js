@@ -80,7 +80,10 @@ const MovieInfo = () => {
 
             <ul className={css.actors_list}>
               {cast.map((actor) => (
-                <li key={actor.id}>{actor.name}</li>
+                <li key={actor.id}>
+                  <img className={css.image} src={`https://image.tmdb.org/t/p/original/${actor.profile_path}`} alt="" />
+                  {actor.name}
+                </li>
               ))}
             </ul>
           </div>
