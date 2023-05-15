@@ -1,0 +1,21 @@
+
+.filter__item {
+    cursor: pointer;
+    font-size: 16px;
+    transition: opacity 0.5s;
+    border: 2px solid #f1dd0f;
+    height: 40px;
+    max-width: 300px;
+    width: auto;
+    box-shadow: 0 0 10px 2px rgb(229, 203, 30);
+}
+
+.filter__item:hover {
+    opacity: 0.5;
+}
+
+.filter__item:focus, .filter__item:active {
+    color: #f7eb05;
+    border-color: #ededef;
+    box-shadow: 0 0 10px 2px #ededef;
+}
